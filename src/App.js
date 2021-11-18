@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function App() {
 
   const [data, setData]= useState([]);
@@ -17,13 +18,13 @@ export default function App() {
   return (
     <div>
       <h1>Listar</h1>
-      <table>
+      <table className="table">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Título</th>
-            <th>Descrição</th>
-            <th>Ações</th>
+            <th scope="col">ID</th>
+            <th scope="col">Título</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Ações</th>
           </tr>
         </thead>
         <tbody>
