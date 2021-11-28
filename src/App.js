@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div>
       <h1>Listar</h1>
-      <table className="table">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col">ID</th>
@@ -33,7 +33,7 @@ export default function App() {
               <td>{produto.id}</td>
               <td>{produto.titulo}</td>
               <td>{produto.descricao}</td>
-              <td>Visualizar Editar Apagar</td>
+              <td>Visualizar | Editar | Apagar</td>
             </tr>
           ))}
         </tbody>
